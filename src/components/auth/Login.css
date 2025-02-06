@@ -1,0 +1,149 @@
+/* Styling for the body and login container */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+}
+
+/* Styling for the login form */
+.login-form {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+  z-index: 1; /* Ensure form is above background image */
+}
+
+/* Styling for the logo */
+.login-logo {
+  width: 250px; /* Adjust width as needed */
+  height: auto;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.login-logo img {
+  width: 100%;
+  height: auto;
+}
+
+/* Title styling */
+.login-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Styling for the inputs */
+input[type="email"] {
+  width: 100%; /* Ensure the input takes full width */
+  padding: 10px;
+  margin: 10px 0; /* Adds vertical spacing between the input fields */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box; /* Ensures padding is included in the width */
+}
+
+/* Styling for the password container */
+.password-container {
+  display: flex;
+  justify-content: space-between; /* Creates space between the input and the button */
+  align-items: center;
+  width: 100%;
+}
+
+.password-container input {
+  width: 80%; /* Adjust the width of the password input */
+  padding: 10px;
+  margin-right: 10px; /* Adds space between the input and the button */
+  border: 1px solid #dfcdcd;
+  border-radius: 5px;
+}
+
+
+.show-password {
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  font-size: 12px; /* Make the text smaller */
+  padding: 5px 10px; /* Adjust padding to make the button smaller */
+  height: auto; /* Make height auto to shrink based on content */
+  width: auto; /* Let the width adjust based on content */
+  border-radius: 5px; /* Add border-radius if needed */
+}
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Styling for forgot password link */
+.forgot-password {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #007bff;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+/* Styling for create account link */
+.create-account {
+  font-size: 14px;
+}
+
+.create-account .link {
+  color: #007bff;
+  cursor: pointer;
+}
+
+.create-account .link:hover {
+  text-decoration: underline;
+}
+
+/* Styling for error message */
+.error-message {
+  color: red;
+  margin-top: 10px;
+}
+
+/* Background Image Styling */
+.background-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('bbms-background.jpg'); /* Correct path */
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5; /* Adjust opacity for better content visibility */
+  z-index: -1; /* Ensure background stays behind the form */
+}
